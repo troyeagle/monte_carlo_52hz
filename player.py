@@ -10,7 +10,7 @@ class Player:
         self.team = team
 
     def get_score(self):
-        return self.level - self.level * 0.1 * random.random()
+        return self.level - 30 * 0.1 * random.random()
 
     def __str__(self):
         return 'Player %s belong to team %s,level %s' % (self.name, self.team, self.level)
